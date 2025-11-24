@@ -1,0 +1,213 @@
+/* ---------- Global Reset ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f8;
+    color: #333;
+}
+
+/* ---------- Main Wrapper ---------- */
+.wrapper {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px 25px 25px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ---------- Header ---------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.header a {
+    text-decoration: none;
+    background: #2c7be5;
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-left: 4px;
+}
+
+.header a:hover {
+    background: #1b5bb8;
+}
+
+/* ---------- Messages ---------- */
+.msg {
+    padding: 10px 12px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.msg.success {
+    background: #e6ffed;
+    color: #1b7a2f;
+    border: 1px solid #bff3cd;
+}
+
+.msg.error {
+    background: #ffe6e6;
+    color: #a52020;
+    border: 1px solid #f3bfbf;
+}
+
+.msg.warning {
+    background: #fff7e6;
+    color: #b36b00;
+    border: 1px solid #ffdd99;
+}
+
+/* ---------- Table ---------- */
+.table-container {
+    overflow-x: auto;
+    margin-top: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+th, td {
+    padding: 8px 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #f0f0f5;
+    font-weight: 600;
+}
+
+/* ---------- Actions Column ---------- */
+.actions a {
+    margin-right: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+.actions a.edit {
+    background: #ffc107;
+    color: #333;
+}
+
+.actions a.delete {
+    background: #dc3545;
+    color: #fff;
+}
+
+.actions a.edit:hover {
+    background: #e0a800;
+}
+
+.actions a.delete:hover {
+    background: #c82333;
+}
+
+/* ---------- Forms ---------- */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2c7be5;
+    box-shadow: 0 0 0 2px rgba(44,123,229,0.2);
+}
+
+/* ---------- Buttons ---------- */
+.form-actions {
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 13px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #2c7be5;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #1b5bb8;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #545b62;
+}
+
+/* ---------- Login Page Tweaks (Optional) ---------- */
+.wrapper h1 {
+    margin-bottom: 10px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    th, td {
+        font-size: 12px;
+    }
+
+    .header a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
